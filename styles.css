@@ -30,8 +30,8 @@ css
     margin-bottom: 30px;
   }
   #fh5co-header #fh5co-logo img {
-    max-width: 50%;
-    align-items: center;
+    max-width: 30%;
+    align-items: stretch;
     
   }
   #fh5co-header nav {
@@ -60,24 +60,24 @@ css
 
 body {
     font-family: "Roboto", Arial, serif;
-    line-height: 1.8;
+    line-height: 2.8;
     font-size: 16px;
     background: #fff;
     color: #848484;
     font-weight: 300;
     overflow-x: hidden;
-    margin-left: 200px; 
+    margin-left: 0px; 
   }
 
 
 .galeria {
   
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(2, 0,5fr);
     grid-gap: 5px ;
-    grid-auto-rows: 100px;
+    grid-auto-rows: 70px;
     grid-auto-flow: row dense;
-    padding: px;
+    padding: 15px;
     justify-content: center;
   
   }
@@ -113,11 +113,12 @@ body {
   @media (min-width: 100px ) {
     .galeria img{
         grid-row: span 4 / span 6;
+        
     }
 
     .galeria {
       grid-column: span 2;
-      object-fit: cover;
+      object-fit: fill;
     }
   
     .galeria {
@@ -125,4 +126,8 @@ body {
     }
   }
   
+  .fh5co-header{
+    grid-column: auto;
+    width: 50%;
+  }
   /*# sourceMappingURL=style.css.map */
